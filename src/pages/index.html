@@ -144,10 +144,31 @@
       media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
     />
   </head>
-  <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+  <body class="body">
+    <main class="main">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li><a class="navigation__link" href="#about">About</a></li>
+          <li><a class="navigation__link" href="#gallery">Gallery</a></li>
+          <li><a class="navigation__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <section id="about" class="section section--about">
+        <div class="container container--about">
+          <div class="container__image"></div>
+          <h2 class="container__h2">Gypsy's</h2>
+          <p class="container__paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+            volutpat, metus vitae consectetur tempor, dui nulla viverra turpis,
+            et fringilla ex felis quis erat. Suspendisse feugiat lacinia nibh.
+            Aenean et tortor dapibus, varius tortor non, semper sapien. Nullam
+            eu risus quis nibh pellentesque porta. Donec sodales ipsum nisi, eu
+            rhoncus libero egestas vel.
+          </p>
+        </div>
+      </section>
+      <section class="section section--gallery"></section>
+      <section class="section section--contact"></section>
+    </main>
   </body>
 </html>

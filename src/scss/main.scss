@@ -1,13 +1,94 @@
 @import "~normalize.css";
-
 @import "_variables";
-@import "modules/hello.scss";
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 
-body {
-  background: $wtf;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+.body {
+  height: 100vh;
+  font-family: "Cutive Mono", monospace;
+  color: $boho-stone;
+}
+
+.navigation {
+  background-color: $boho-sand;
+  height: 5vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  &__list {
+    height: 100%;
+    font-size: 2vh;
+    font-weight: bold;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.main {
+  background-image: url("../assets/img/gypsys\ \(61\)-min.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.section {
   min-height: 100vh;
+  padding: 7.5%;
+}
+
+.container {
+  &__image {
+    grid-area: img;
+    background: url("../assets/img/gypsys\ \(10\)-min.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: $boho-khaki 3px solid;
+  }
+  &__h2 {
+    grid-area: header;
+    text-align: center;
+    font-size: 12vh;
+    text-transform: uppercase;
+  }
+  &__paragraph {
+    grid-area: paragraph;
+    padding: 5%;
+    font-size: 3vh;
+    text-align: center;
+  }
+  &--about {
+    display: grid;
+    background-color: rgba(232, 216, 197, 0.7);
+    border-radius: 15px;
+    height: 70vh;
+    grid-template-areas:
+      "img header"
+      "img paragraph";
+    grid-template-rows: 30% 1fr;
+    grid-template-columns: 35% 1fr;
+    //margin: 7.5%;
+  }
+}
+
+.h1 {
+  flex-grow: 1.5;
+  text-align: center;
 }
