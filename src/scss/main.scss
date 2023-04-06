@@ -2,7 +2,7 @@
 @import "_variables";
 @import "modules/animations.scss";
 @import "modules/navigation.scss";
-@import "modules/containers.scss";
+@import "modules/sections.scss";
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 
 ul {
@@ -28,14 +28,4 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-.section {
-  min-height: 100vh;
-  padding: 7.5%;
-}
-
-.h1 {
-  flex-grow: 1.5;
-  text-align: center;
 }

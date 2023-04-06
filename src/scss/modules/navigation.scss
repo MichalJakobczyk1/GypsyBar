@@ -2,6 +2,7 @@
   background-color: $boho-sand;
   height: 5vh;
   position: sticky;
+  z-index: 1;
   top: 0;
   left: 0;
   &__list {
@@ -20,11 +21,11 @@
       &::after {
         content: "";
         display: block;
-        background-color: $boho-stone;
+        background-color: $boho-khaki;
         position: relative;
         transition: width 0.5s ease-out;
         width: 0%;
-        height: 3px;
+        height: 2px;
       }
     }
   }
