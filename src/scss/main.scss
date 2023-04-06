@@ -5,6 +5,10 @@
 @import "modules/sections.scss";
 @import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
 
+* {
+  scroll-behavior: smooth;
+}
+
 ul {
   display: block;
   list-style-type: disc;
@@ -19,7 +23,6 @@ ul {
   height: 100vh;
   font-family: "Cutive Mono", monospace;
   color: $boho-stone;
-  scroll-behavior: smooth;
 }
 
 .main {

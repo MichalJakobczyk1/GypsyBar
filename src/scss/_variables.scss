@@ -5,3 +5,32 @@ $boho-stone: #645b53;
 $boho-mustard: #dba955;
 $boho-clay: #b8613c;
 $boho-dark: #1b1b1b;
+
+@mixin containerBoho {
+  background-color: rgba(232, 216, 197, 0.9);
+  border-radius: 15px;
+  height: 70vh;
+}
+@mixin containerWhite {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 75vh;
+  width: 100%;
+  margin: 5% 0;
+  background-color: #fff;
+}
+@mixin containerWhiteHeading {
+  font-size: 2vw;
+  color: $boho-dark;
+}
+@mixin containerWhiteParagraph {
+  font-size: 1.25vw;
+  color: $boho-dark;
+}
+@mixin center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
