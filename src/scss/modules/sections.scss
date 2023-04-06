@@ -32,7 +32,7 @@
     text-transform: uppercase;
     opacity: 0;
     transform: translateY(50px);
-    animation: appear 1.5s 0.5s forwards;
+    animation: appearDown 1.5s 0.5s forwards;
   }
   &__paragraph {
     grid-area: paragraph;
@@ -41,7 +41,7 @@
     text-align: center;
     opacity: 0;
     transform: translateY(100px);
-    animation: appear 1.5s 1.5s forwards;
+    animation: appearDown 1.5s 1.5s forwards;
   }
 }
 
@@ -56,10 +56,16 @@
   &__h1 {
     font-size: 5.5vh;
     color: $boho-dark;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: appearDown 1.5s 1.25s forwards;
   }
   &__paragraph {
     font-size: 2.5vh;
     color: $boho-dark;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: appearDown 1.5s 1.5s forwards;
   }
   &__container {
     min-height: 100%;
@@ -86,6 +92,9 @@
     max-width: 100%;
     max-height: 100%;
     &--logo {
+      opacity: 0;
+      transform: translateY(50px);
+      animation: appearDown 1.5s 1s forwards;
       max-width: 457px;
       max-height: 379px;
     }
@@ -97,16 +106,25 @@
       grid-area: large;
       min-width: 100%;
       min-height: 100%;
+      opacity: 0;
+      transform: translateX(50px);
+      animation: appearRight 1.5s 2s forwards;
     }
     &--medium {
       grid-area: medium;
       min-width: 100%;
       min-height: 100%;
+      opacity: 0;
+      transform: translateX(50px);
+      animation: appearRight 1.5s 2.25s forwards;
     }
     &--small {
       grid-area: small;
       min-width: 100%;
       min-height: 100%;
+      opacity: 0;
+      transform: translateX(50px);
+      animation: appearRight 1.5s 2.5s forwards;
     }
   }
 }

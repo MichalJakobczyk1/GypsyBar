@@ -1,6 +1,12 @@
-@keyframes appear {
+@keyframes appearDown {
   100% {
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes appearRight {
+  100% {
+    transform: translateX(0);
     opacity: 1;
   }
 }
