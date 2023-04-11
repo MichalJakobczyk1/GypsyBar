@@ -202,17 +202,36 @@
       <section class="section section--gallery">
         <div class="gallery">
           <div class="gallery__container gallery__container--content">
-            <h2 class="gallery__h2">lorem ipsum</h2>
-            <p class="gallery__paragraph">lorem ipsumlorem ipsumlorem ipsum</p>
+            <h2 class="gallery__h2">Gallery</h2>
+            <p class="gallery__paragraph">Check my previous realizations</p>
           </div>
-          <div class="gallery__container gallery__container--slider"></div>
+          <div aria-label="newest-photos" class="gallery__container gallery__container--slider">
+            <div class="gallery__carousel" data-carousel>
+              <button class="gallery__button gallery__button--previous" data-carousel-button = "prev">prev</button>
+              <button class="gallery__button gallery__button--next" data-carousel-button = "next">next</button>
+              <ul data-slides>
+                <li class="gallery__slide" data-active>
+                  <img class="gallery__image" src="../assets/img/gypsys (49)-min.jpg" />
+                </li>
+                <li class="gallery__slide">
+                  <img class="gallery__image" src="../assets/img/gypsys (57)-min.jpg"/>
+                </li>
+                <li class="gallery__slide">
+                  <img class="gallery__image" src="../assets/img/gypsys (39)-min.jpg"/>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
       <section class="section section--contact">
         <div class="contact">
           <div class="contact__container contact__container--social">
             <div class="contact__tile">
-              <a class="contact__link contact__link--facebook"
+              <a
+                class="contact__link contact__link--facebook"
+                href="https://www.facebook.com/gypsysbarmobilny"
+                target="_blank"
                 ><img
                   class="contact__image contact__image--facebook"
                   src="../assets/img/facebook.svg"
@@ -221,7 +240,10 @@
               <p class="contact__paragraph">Check facebook for new posts</p>
             </div>
             <div class="contact__tile">
-              <a class="contact__link contact__link--instagram"
+              <a
+                class="contact__link contact__link--instagram"
+                href="https://www.instagram.com/gypsysmobilebar/"
+                target="_blank"
                 ><img
                   class="contact__image contact__image--instagram"
                   src="../assets/img/instagram.svg"
@@ -230,25 +252,64 @@
               <p class="contact__paragraph">Instagram for photos&relations</p>
             </div>
             <div class="contact__tile">
-              <a class="contact__link contact__link--phone"
+              <a
+                class="contact__link contact__link--phone"
+                href="tel:516421882"
+                target="_blank"
                 ><img
                   class="contact__image contact__image--phone"
                   src="../assets/img/phone.svg"
                   alt="phone icone"
               /></a>
-              <p class="contact__paragraph">Call me in case of any questions</p>
+              <p class="contact__paragraph">+48 xxxxxxxxx</p>
             </div>
             <div class="contact__tile">
-              <a class="contact__link contact__link--mail"
+              <a
+                class="contact__link contact__link--mail"
+                href="mailto:someone@yoursite.com"
+                target="_blank"
                 ><img
                   class="contact__image contact__image--mail"
                   src="../assets/img/mail.svg"
                   alt="email icon"
               /></a>
-              <p class="contact__paragraph">Or send me an email</p>
+              <p class="contact__paragraph">test@gmail.com</p>
             </div>
           </div>
-          <div class="contact__container contact__container--form"></div>
+          <div class="contact__container contact__container--form">
+            <h3 class="contact__h3">You can also write here </br> straight ahead</h3>
+            <form class="form">
+              <input type="hidden" na>
+              <input
+                class="form__input"
+                type="text"
+                id="name"
+                placeholder="Your name"
+                required
+              />
+              <input
+                class="form__input"
+                type="email"
+                id="email"
+                placeholder="Your email"
+                required
+              />
+              <input
+                class="form__input"
+                type="text"
+                id="phone"
+                placeholder="Your contact number"
+                required
+              />
+              <textarea
+                class="form__textarea"
+                id="message"
+                rows="4"
+                placeholder="Your message"
+              ></textarea>
+              <button class="form__submit" type="submit">Send</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

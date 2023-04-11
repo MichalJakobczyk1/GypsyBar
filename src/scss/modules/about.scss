@@ -17,11 +17,11 @@
   &__h2 {
     grid-area: header;
     text-align: center;
-    font-size: 12vh;
+    font-size: 5vw;
     text-transform: uppercase;
     opacity: 0;
-    transform: translateY(50px);
-    animation: none;
+    transform: translateY(100px);
+    animation: appearDown 1.5s 1.5s forwards;
   }
   &__paragraph {
     grid-area: paragraph;
