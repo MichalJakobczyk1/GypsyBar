@@ -1,0 +1,35 @@
+.about {
+  @include containerBoho;
+  display: grid;
+  grid-template-areas:
+    "img header"
+    "img paragraph";
+  grid-template-rows: 25% 1fr;
+  grid-template-columns: 35% 1fr;
+  &__image {
+    grid-area: img;
+    background: url("../assets/img/gypsys\ \(10\)-min.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+    border: $boho-khaki 3px solid;
+  }
+  &__h2 {
+    grid-area: header;
+    text-align: center;
+    font-size: 12vh;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: none;
+  }
+  &__paragraph {
+    grid-area: paragraph;
+    padding: 5%;
+    font-size: 1.5vw;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: appearDown 1.5s 1.5s forwards;
+  }
+}

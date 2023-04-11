@@ -1,0 +1,28 @@
+.contact {
+  @include containerBoho;
+  display: flex;
+  flex-direction: row;
+  &__container {
+    width: 50%;
+    border: black 1px solid;
+    &--social {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__image {
+    max-width: 6.25vw;
+  }
+  &__paragraph {
+    min-width: 60%;
+    padding: 0 1vw;
+    font-size: 1.25vw;
+    font-weight: bold;
+  }
+}

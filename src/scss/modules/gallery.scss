@@ -1,0 +1,16 @@
+.gallery {
+  @include containerWhite;
+  &__container {
+    min-height: 100%;
+    min-width: 50%;
+    &--content {
+      @include center;
+    }
+  }
+  &__h2 {
+    @include containerWhiteHeading;
+  }
+  &__paragraph {
+    @include containerWhiteParagraph;
+  }
+}
