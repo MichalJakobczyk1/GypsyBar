@@ -10,3 +10,16 @@
     opacity: 1;
   }
 }
+@keyframes typing {
+  100% {
+    left: 70%;
+  }
+}
+@keyframes disappear {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}

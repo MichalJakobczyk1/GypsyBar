@@ -5,6 +5,18 @@ import "../scss/main.scss";
 // registerSW();
 
 /* place your code below */
+
+const main = document.querySelector(".main--preload");
+
+function remove() {
+  main.classList.remove("main--preload");
+}
+
+window.addEventListener("load", (event) => {
+  console.log("page is fully loaded");
+  setTimeout(remove, 4000);
+});
+
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
 buttons.forEach((button) => {

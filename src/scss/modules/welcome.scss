@@ -4,13 +4,13 @@
     @include containerWhiteHeading;
     opacity: 0;
     transform: translateY(50px);
-    animation: appearDown 1.5s 1.25s forwards;
+    animation: appearDown 1.5s 4.25s forwards;
   }
   &__paragraph {
     @include containerWhiteParagraph;
     opacity: 0;
     transform: translateY(50px);
-    animation: appearDown 1.5s 1.5s forwards;
+    animation: appearDown 1.5s 4.5s forwards;
   }
   &__container {
     min-height: 100%;
@@ -36,7 +36,7 @@
     &--logo {
       opacity: 0;
       transform: translateY(50px);
-      animation: appearDown 1.5s 1s forwards;
+      animation: appearDown 1.5s 4s forwards;
       max-width: 457px;
       max-height: 370px;
     }
@@ -49,24 +49,24 @@
       min-width: 100%;
       min-height: 100%;
       opacity: 0;
-      transform: translateX(50px);
-      animation: appearRight 1.5s 2s forwards;
+      transform: translateX(-50px);
+      animation: appearRight 1.5s 5s forwards;
     }
     &--medium {
       grid-area: medium;
       min-width: 100%;
       min-height: 100%;
       opacity: 0;
-      transform: translateX(50px);
-      animation: appearRight 1.5s 2.25s forwards;
+      transform: translateX(-50px);
+      animation: appearRight 1.5s 5.5s forwards;
     }
     &--small {
       grid-area: small;
       min-width: 100%;
       min-height: 100%;
       opacity: 0;
-      transform: translateX(50px);
-      animation: appearRight 1.5s 2.5s forwards;
+      transform: translateX(-50px);
+      animation: appearRight 1.5s 5.75s forwards;
     }
   }
 }
