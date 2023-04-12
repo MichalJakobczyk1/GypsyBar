@@ -11,11 +11,7 @@ const main = document.querySelector(".main--preload");
 function remove() {
   main.classList.remove("main--preload");
 }
-
-window.addEventListener("load", (event) => {
-  console.log("page is fully loaded");
-  setTimeout(remove, 4000);
-});
+setTimeout(remove, 3750);
 
 const buttons = document.querySelectorAll("[data-carousel-button]");
 

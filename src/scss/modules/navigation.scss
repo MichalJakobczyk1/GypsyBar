@@ -2,9 +2,12 @@
   background-color: $boho-sand;
   height: 5vh;
   position: sticky;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: appearDown 0.75s 3s forwards;
   &__list {
     height: 100%;
     font-size: 2vh;

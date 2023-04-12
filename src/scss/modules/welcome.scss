@@ -58,7 +58,7 @@
       min-height: 100%;
       opacity: 0;
       transform: translateX(-50px);
-      animation: appearRight 1.5s 5.5s forwards;
+      animation: appearRight 1.5s 5.25s forwards;
     }
     &--small {
       grid-area: small;
@@ -66,7 +66,7 @@
       min-height: 100%;
       opacity: 0;
       transform: translateX(-50px);
-      animation: appearRight 1.5s 5.75s forwards;
+      animation: appearRight 1.5s 5.5s forwards;
     }
   }
 }

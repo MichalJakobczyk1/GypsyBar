@@ -199,7 +199,7 @@
           </p>
         </div>
       </section>
-      <section class="section section--gallery">
+      <section id="galley" class="section section--gallery">
         <div class="gallery">
           <div class="gallery__container gallery__container--content">
             <h2 class="gallery__h2">Gallery</h2>
@@ -245,7 +245,7 @@
           </div>
         </div>
       </section>
-      <section class="section section--contact">
+      <section id="contact" class="section section--contact">
         <div class="contact">
           <div class="contact__container contact__container--social">
             <div class="contact__tile">
@@ -287,23 +287,26 @@
             <div class="contact__tile">
               <a
                 class="contact__link contact__link--mail"
-                href="mailto:someone@yoursite.com"
+                href="mailto:gajo.daniel@gmail.com"
                 target="_blank"
                 ><img
                   class="contact__image contact__image--mail"
                   src="../assets/img/mail.svg"
                   alt="email icon"
               /></a>
-              <p class="contact__paragraph">test@gmail.com</p>
+              <p class="contact__paragraph">gajo.daniel@gmail.com</p>
             </div>
           </div>
           <div class="contact__container contact__container--form">
             <h3 class="contact__h3">You can also write here </br> straight ahead</h3>
-            <form class="form">
-              <input type="hidden" na>
+            <form class="form" action="https://formsubmit.co/michal.jakobczyk2@gmail.com" method="POST">
+              <input type="hidden" name="_next" value="http://localhost:8080/#contact">
+              <input type="hidden" name="_subject" value="New mail for Gypsy">
+              <input type="hidden" name="_captcha" value="false">
               <input
                 class="form__input"
                 type="text"
+                name="Name"
                 id="name"
                 placeholder="Your name"
                 required
@@ -311,6 +314,7 @@
               <input
                 class="form__input"
                 type="email"
+                name="Email"
                 id="email"
                 placeholder="Your email"
                 required
@@ -318,6 +322,7 @@
               <input
                 class="form__input"
                 type="text"
+                name="Phone number"
                 id="phone"
                 placeholder="Your contact number"
                 required
@@ -325,6 +330,7 @@
               <textarea
                 class="form__textarea"
                 id="message"
+                name="Message"
                 rows="4"
                 placeholder="Your message"
               ></textarea>
