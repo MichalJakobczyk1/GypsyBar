@@ -1,5 +1,6 @@
 .gallery {
   @include containerWhite;
+  color: $boho-dark;
   &__container {
     height: 100%;
     min-width: 50%;
@@ -8,10 +9,10 @@
     }
   }
   &__h2 {
-    @include containerWhiteHeading;
+    font-size: 3vw;
   }
   &__paragraph {
-    @include containerWhiteParagraph;
+    font-size: 2vw;
   }
   &__carousel {
     width: 100%;
@@ -40,6 +41,7 @@
     }
   }
   &__button {
+    cursor: pointer;
     position: absolute;
     z-index: 2;
     background: none;
