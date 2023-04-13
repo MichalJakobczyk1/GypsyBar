@@ -11,6 +11,9 @@
     }
     &--form {
       @include center;
+      opacity: 0;
+      transform: translateY(50px);
+      animation: none;
     }
   }
   &__tile {
@@ -35,6 +38,26 @@
     padding: 0 1vw;
     font-size: 1.25vw;
     font-weight: bold;
+    &--1 {
+      opacity: 0;
+      transform: translateY(50px);
+      animation: none;
+    }
+    &--2 {
+      opacity: 0;
+      transform: translateY(50px);
+      animation: none;
+    }
+    &--3 {
+      opacity: 0;
+      transform: translateY(50px);
+      animation: none;
+    }
+    &--4 {
+      opacity: 0;
+      transform: translateY(50px);
+      animation: none;
+    }
   }
   &__h3 {
     font-size: 2vw;

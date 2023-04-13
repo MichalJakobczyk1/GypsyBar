@@ -53,17 +53,5 @@ ul {
       height: 100%;
       animation: disappear 0.75s 3s ease-in-out both;
     }
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   top: 25%;
-    //   left: 38%;
-    //   z-index: 3;
-    //   height: 100%;
-    //   width: 30%;
-    //   background: $boho-sand;
-    //   animation: disappear 0.75s 2.5s ease-in-out forwards,
-    //     typing 1.5s steps(10) infinite;
-    // }
   }
 }

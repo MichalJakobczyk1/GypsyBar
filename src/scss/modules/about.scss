@@ -8,7 +8,7 @@
   grid-template-columns: 35% 1fr;
   &__image {
     grid-area: img;
-    background: url("/src/assets/img/throwing.jpg");
+    background: url("../assets/img/throwing.jpg");
     background-size: cover;
     background-position: center;
     border-radius: 15px;
@@ -21,7 +21,7 @@
     text-transform: uppercase;
     opacity: 0;
     transform: translateY(100px);
-    animation: appearDown 1.5s 1.5s forwards;
+    animation: none;
   }
   &__paragraph {
     grid-area: paragraph;
@@ -30,6 +30,6 @@
     text-align: center;
     opacity: 0;
     transform: translateY(100px);
-    animation: appearDown 1.5s 1.5s forwards;
+    animation: none;
   }
 }

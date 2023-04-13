@@ -10,9 +10,15 @@
   }
   &__h2 {
     font-size: 3vw;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: none;
   }
   &__paragraph {
     font-size: 2vw;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: none;
   }
   &__carousel {
     width: 100%;
