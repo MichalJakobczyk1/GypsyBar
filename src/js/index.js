@@ -102,3 +102,18 @@ buttons.forEach((button) => {
     delete activeSlide.dataset.active;
   });
 });
+
+const lang = document.querySelector(".lang");
+let p = document.querySelector(".welcome__h1");
+let isPl = false;
+
+lang.addEventListener("click", () => {
+  console.log("xdxdxd");
+  if (isPl == false) {
+    p.innerHTML = "pl pl pl ";
+    isPl = true;
+  } else {
+    p.innerHTML = "eng eng eng";
+    isPl = false;
+  }
+});
