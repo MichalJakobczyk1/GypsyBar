@@ -148,9 +148,9 @@
     <main class="main main--preload">
       <nav class="navigation">
         <ul class="navigation__list">
-          <li><a class="navigation__link" href="#about">About</a></li>
-          <li><a class="navigation__link" href="#gallery">Gallery</a></li>
-          <li><a class="navigation__link" href="#contact">Contact</a></li>
+          <li><a class="navigation__link navigation__link--about" href="#about">About</a></li>
+          <li><a class="navigation__link navigation__link--gallery" href="#gallery">Gallery</a></li>
+          <li><a class="navigation__link navigation__link--contact" href="#contact">Contact</a></li>
           <li>
             <input type="checkbox" class="lang">
           </li>
@@ -164,8 +164,8 @@
               src="../assets/img/logo.jpg"
               alt="Gypsy's bar logo"
             />
-            <h1 class="welcome__h1">Best cocktail experience</h1>
-            <p class="welcome__paragraph">
+            <h1 class="welcome__h1 welcome__h1--js">Best cocktail experience</h1>
+            <p class="welcome__paragraph welcome__paragraph--js">
               Feel cocktail bar experience on your party
             </p>
           </div>
@@ -301,7 +301,7 @@
             </div>
           </div>
           <div class="contact__container contact__container--form">
-            <h3 class="contact__h3">You can also write here </br> straight ahead</h3>
+            <h3 class="contact__h3 contact__h3--js">You can also write here </br> straight ahead</h3>
             <form class="form" action="https://formsubmit.co/michal.jakobczyk2@gmail.com" method="POST">
               <input type="hidden" name="_next" value="http://localhost:8080/#contact">
               <input type="hidden" name="_subject" value="New mail for Gypsy">
@@ -325,7 +325,7 @@
               <input
                 class="form__input"
                 type="text"
-                name="Phone number"
+                name="PhoneNumber"
                 id="phone"
                 placeholder="Your contact number"
                 required
@@ -337,7 +337,7 @@
                 rows="4"
                 placeholder="Your message"
               ></textarea>
-              <button class="form__submit" type="submit">Send</button>
+              <button class="form__submit form__submit--js" type="submit">Send</button>
             </form>
           </div>
         </div>
