@@ -5,6 +5,8 @@ $boho-stone: #645b53;
 $boho-mustard: #dba955;
 $boho-clay: #b8613c;
 $boho-dark: #1b1b1b;
+$tablet: 768px;
+$mobile: 426px;
 
 @mixin containerBoho {
   background-color: rgba(232, 216, 197, 0.9);
@@ -24,8 +26,16 @@ $boho-dark: #1b1b1b;
   font-size: 2vw;
   color: $boho-dark;
 }
+@mixin containerWhiteHeadingMobile {
+  font-size: 5vw;
+  color: $boho-dark;
+}
 @mixin containerWhiteParagraph {
   font-size: 1.25vw;
+  color: $boho-dark;
+}
+@mixin containerWhiteParagraphMobile {
+  font-size: 3.5vw;
   color: $boho-dark;
 }
 @mixin center {

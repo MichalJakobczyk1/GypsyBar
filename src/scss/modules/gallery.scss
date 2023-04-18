@@ -87,8 +87,8 @@
       transform: translate(-50%, -50%);
       border: 5px solid #fff;
       border-radius: 5px;
-      object-fit: cover;
-      width: 500px;
+      object-fit: contain;
+      width: 600px;
     }
   }
 }

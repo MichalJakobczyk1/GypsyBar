@@ -166,7 +166,9 @@ lang.addEventListener("click", () => {
 document.querySelectorAll(".gallery__image").forEach((image) => {
   image.onclick = () => {
     document.querySelector(".gallery__popup").style.display = "block";
-    //document.querySelector(".gallery__image").src = image.getAttribute("src");
+    document.querySelector(".gallery__popupImg").src = document.querySelector(
+      "[data-active] img.gallery__image"
+    ).src;
   };
 });
 

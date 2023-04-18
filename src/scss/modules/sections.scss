@@ -1,6 +1,9 @@
 .section {
   min-height: 100vh;
   max-height: 100vh;
+  @media (max-width: $mobile) {
+    max-height: 400vh;
+  }
   padding: 7.5%;
   &--welcome {
     padding: 0;
