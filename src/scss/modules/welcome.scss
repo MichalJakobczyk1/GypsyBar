@@ -1,12 +1,7 @@
 .welcome {
   @include containerWhite;
   @media (max-width: $mobile) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 75vh;
-    width: 100%;
-    margin: 0;
+    @include containerWhiteMobile;
   }
   &__h1 {
     @include containerWhiteHeading;
@@ -42,7 +37,7 @@
       grid-template-rows: 60% 1fr;
       grid-gap: 2%;
       @media (max-width: $mobile) {
-        grid-gap: 0;
+        display: none;
       }
     }
   }
@@ -56,6 +51,9 @@
       animation: appearDown 1s 4s forwards;
       max-width: 457px;
       max-height: 370px;
+      @media (max-width: $mobile) {
+        max-width: 425px;
+      }
     }
     &--special {
       border: $boho-dark 2px solid;

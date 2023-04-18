@@ -40,6 +40,9 @@
   opacity: 0;
   transform: translateY(-50px);
   animation: appearDown 0.75s 3s forwards;
+  @media (max-width: $mobile) {
+    display: none;
+  }
   &__list {
     height: 100%;
     font-size: 2vh;

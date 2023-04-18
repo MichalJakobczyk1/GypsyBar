@@ -1,12 +1,17 @@
 .section {
   min-height: 100vh;
   max-height: 100vh;
-  @media (max-width: $mobile) {
-    max-height: 400vh;
-  }
   padding: 7.5%;
+  @media (max-width: $mobile) {
+    padding: 0;
+  }
   &--welcome {
     padding: 0;
+  }
+  &--about {
+    @media (max-width: $mobile) {
+      margin: 20% 0;
+    }
   }
   &--gallery {
     padding: 2.5% 0 2.5% 0;

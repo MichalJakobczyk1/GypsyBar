@@ -1,11 +1,24 @@
 .gallery {
   @include containerWhite;
   color: $boho-dark;
+  max-height: 100vh;
+  @media (max-width: $mobile) {
+    @include containerWhiteMobile;
+  }
   &__container {
     height: 100%;
     min-width: 50%;
     &--content {
       @include center;
+      @media (max-width: $mobile) {
+        max-height: 30%;
+      }
+    }
+    &--slider {
+      @media (max-width: $mobile) {
+        max-height: 100%;
+        min-width: 100%;
+      }
     }
   }
   &__h2 {
@@ -13,12 +26,18 @@
     opacity: 0;
     transform: translateY(100px);
     animation: none;
+    @media (max-width: $mobile) {
+      @include mobileH2;
+    }
   }
   &__paragraph {
     font-size: 2vw;
     opacity: 0;
     transform: translateY(100px);
     animation: none;
+    @media (max-width: $mobile) {
+      @include containerWhiteParagraphMobile;
+    }
   }
   &__carousel {
     width: 100%;
@@ -35,6 +54,9 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+    @media (max-width: $mobile) {
+      object-fit: cover;
+    }
   }
   &__slide {
     position: absolute;

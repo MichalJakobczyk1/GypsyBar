@@ -6,6 +6,8 @@ import "../scss/main.scss";
 
 /* place your code below */
 
+const mediaQueryMobile = window.matchMedia("(min-width: 426px)");
+
 const aboutSection = document.querySelectorAll(".section--about");
 const aboutHeading = document.querySelector(".about__h2--js");
 const aboutParagraph = document.querySelector(".about__paragraph--js");
@@ -163,14 +165,16 @@ lang.addEventListener("click", () => {
   }
 });
 
-document.querySelectorAll(".gallery__image").forEach((image) => {
-  image.onclick = () => {
-    document.querySelector(".gallery__popup").style.display = "block";
-    document.querySelector(".gallery__popupImg").src = document.querySelector(
-      "[data-active] img.gallery__image"
-    ).src;
-  };
-});
+if (mediaQueryMobile.matches) {
+  document.querySelectorAll(".gallery__image").forEach((image) => {
+    image.onclick = () => {
+      document.querySelector(".gallery__popup").style.display = "block";
+      document.querySelector(".gallery__popupImg").src = document.querySelector(
+        "[data-active] img.gallery__image"
+      ).src;
+    };
+  });
+}
 
 document.querySelector(".gallery__close").onclick = () => {
   document.querySelector(".gallery__popup").style.display = "none";
