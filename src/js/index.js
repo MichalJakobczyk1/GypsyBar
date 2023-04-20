@@ -103,7 +103,7 @@ buttons.forEach((button) => {
   });
 });
 
-const lang = document.querySelector(".lang");
+const buttonLang = document.querySelector(".lang__button");
 const navAbout = document.querySelector(".navigation__link--about");
 const navGallery = document.querySelector(".navigation__link--gallery");
 const navContact = document.querySelector(".navigation__link--contact");
@@ -121,8 +121,9 @@ const messagePlaceholder = document.getElementsByName("Message")[0];
 
 let isPl = false;
 
-lang.addEventListener("click", () => {
+buttonLang.addEventListener("click", () => {
   if (isPl == false) {
+    buttonLang.innerHTML = "ENG";
     navAbout.innerHTML = "O mnie";
     navGallery.innerHTML = "Galeria";
     navContact.innerHTML = "Kontakt";
@@ -142,6 +143,7 @@ lang.addEventListener("click", () => {
     messagePlaceholder.placeholder = "Wiadomość";
     isPl = true;
   } else {
+    buttonLang.innerHTML = "PL";
     navAbout.innerHTML = "About";
     navGallery.innerHTML = "Gallery";
     navContact.innerHTML = "Contact";
