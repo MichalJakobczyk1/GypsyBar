@@ -52,6 +52,9 @@ ul {
       width: 100%;
       height: 100%;
       animation: disappear 0.75s 3s ease-in-out both;
+      @media (max-width: $mobile) {
+        font-size: 10vw;
+      }
     }
   }
 }

@@ -16,4 +16,9 @@
   &--gallery {
     padding: 2.5% 0 2.5% 0;
   }
+  &--contact {
+    @media (max-width: $mobile) {
+      margin: 20% 0 0 0;
+    }
+  }
 }

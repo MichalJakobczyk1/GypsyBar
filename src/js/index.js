@@ -1,11 +1,9 @@
 import "../scss/main.scss";
-
 // uncomment the lines below to enable PWA
 // import {registerSW} from './pwa.js';
 // registerSW();
 
 /* place your code below */
-
 const mediaQueryMobile = window.matchMedia("(min-width: 426px)");
 
 const aboutSection = document.querySelectorAll(".section--about");
@@ -175,7 +173,17 @@ if (mediaQueryMobile.matches) {
     };
   });
 }
-
+console.log(document.querySelector(".gallery__popupImg").src);
 document.querySelector(".gallery__close").onclick = () => {
   document.querySelector(".gallery__popup").style.display = "none";
 };
+
+const arrowLeft = document.querySelector(".gallery__arrow--left");
+const arrowRight = document.querySelector(".gallery__arrow--right");
+if (window.innerWidth < 500) {
+  arrowLeft.src = "src/assets/img/arrowLeftWhite.svg";
+  arrowRight.src = "src/assets/img/arrowRightWhite.svg";
+} else {
+  arrowLeft.src = "src/assets/img/arrowLeft.svg";
+  arrowRight.src = "src/assets/img/arrowRight.svg";
+}
