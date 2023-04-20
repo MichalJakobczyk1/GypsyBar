@@ -23,3 +23,11 @@
     opacity: 0;
   }
 }
+@keyframes appearNav {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 30%;
+  }
+}

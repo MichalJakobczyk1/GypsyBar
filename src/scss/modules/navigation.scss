@@ -41,7 +41,13 @@
   transform: translateY(-50px);
   animation: appearDown 0.75s 3s forwards;
   @media (max-width: $mobile) {
-    display: none;
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 80vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 1s;
   }
   &__list {
     height: 100%;
@@ -52,6 +58,12 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      font-size: 4vh;
+    }
     & li {
       &:hover::after {
         width: 100%;
@@ -77,5 +89,27 @@
     &:hover {
       color: $boho-khaki;
     }
+  }
+}
+.menu {
+  border-width: 0;
+  border-style: none;
+  border-color: inherit;
+  border-image: none;
+  top: 30px;
+  @include hamburger;
+  z-index: 4;
+  &::before {
+    content: "";
+    top: 15px;
+    @include hamburger;
+  }
+  &::after {
+    content: "";
+    top: 45px;
+    @include hamburger;
+  }
+  &--open {
+    background: red;
   }
 }

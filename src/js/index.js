@@ -187,3 +187,17 @@ if (window.innerWidth < 500) {
   arrowLeft.src = "src/assets/img/arrowLeft.svg";
   arrowRight.src = "src/assets/img/arrowRight.svg";
 }
+
+const hamburger = document.querySelector(".menu--closed");
+const navigation = document.querySelector(".navigation--js");
+hamburger.addEventListener("click", () => {
+  if (hamburger.classList.contains("menu--closed")) {
+    hamburger.classList.remove("menu--closed");
+    hamburger.classList.add("menu--open");
+    navigation.style.left = "30%";
+  } else {
+    hamburger.classList.add("menu--closed");
+    hamburger.classList.remove("menu--open");
+    navigation.style.left = "100%";
+  }
+});

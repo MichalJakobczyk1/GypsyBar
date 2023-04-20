@@ -8,6 +8,14 @@ $boho-dark: #1b1b1b;
 $tablet: 768px;
 $mobile: 426px;
 
+@mixin hamburger {
+  position: fixed;
+  right: 20px;
+  width: 40px;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+}
 @mixin containerBoho {
   background-color: rgba(232, 216, 197, 0.9);
   border-radius: 15px;
