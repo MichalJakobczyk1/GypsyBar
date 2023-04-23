@@ -5,12 +5,23 @@
   @media (max-width: $mobile) {
     padding: 0;
   }
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    padding: 0;
+    margin: 20% 0 20% 0;
+  }
   &--welcome {
     padding: 0;
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      margin: 0;
+      padding: 0;
+    }
   }
   &--about {
     @media (max-width: $mobile) {
       margin: 20% 0;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      padding: 0;
     }
   }
   &--gallery {
@@ -19,6 +30,10 @@
   &--contact {
     @media (max-width: $mobile) {
       margin: 20% 0 0 0;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      margin: 0;
+      padding: 0;
     }
   }
 }

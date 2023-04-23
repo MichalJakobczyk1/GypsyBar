@@ -13,6 +13,10 @@
     display: flex;
     flex-direction: column;
   }
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    border-radius: 0;
+    height: 100vh;
+  }
   &__image {
     grid-area: img;
     background: url("../assets/img/throwing.jpg");
@@ -21,6 +25,11 @@
     border-radius: 15px;
     border: $boho-khaki 3px solid;
     @media (max-width: $mobile) {
+      min-height: 35%;
+      border-radius: 0;
+      border: $boho-khaki 2px solid;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
       min-height: 35%;
       border-radius: 0;
       border: $boho-khaki 2px solid;
@@ -48,6 +57,11 @@
     animation: none;
     @media (max-width: $mobile) {
       font-size: 5vw;
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      font-size: 3vw;
       margin-block-start: 0;
       margin-block-end: 0;
     }

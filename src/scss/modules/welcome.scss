@@ -3,6 +3,9 @@
   @media (max-width: $mobile) {
     @include containerWhiteMobile;
   }
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    height: 100vh;
+  }
   &__h1 {
     @include containerWhiteHeading;
     opacity: 0;
@@ -10,6 +13,9 @@
     animation: appearDown 1s 4.25s forwards;
     @media (max-width: $mobile) {
       @include containerWhiteHeadingMobile;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      @include containerWhiteHeadingTablet;
     }
   }
   &__paragraph {
@@ -19,6 +25,9 @@
     animation: appearDown 1s 4.5s forwards;
     @media (max-width: $mobile) {
       @include containerWhiteParagraphMobile;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      @include containerWhiteParagraphTablet;
     }
   }
   &__container {
@@ -52,7 +61,10 @@
       max-width: 457px;
       max-height: 370px;
       @media (max-width: $mobile) {
-        max-width: 425px;
+        max-width: 310px;
+      }
+      @media (min-width: $tablet) and (max-width: $laptop) {
+        max-width: 357px;
       }
     }
     &--special {

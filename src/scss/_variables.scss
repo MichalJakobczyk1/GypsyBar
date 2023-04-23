@@ -5,7 +5,8 @@ $boho-stone: #645b53;
 $boho-mustard: #dba955;
 $boho-clay: #b8613c;
 $boho-dark: #1b1b1b;
-$tablet: 768px;
+$laptop: 1023px;
+$tablet: 767px;
 $mobile: 426px;
 
 @mixin hamburger {
@@ -46,12 +47,20 @@ $mobile: 426px;
   font-size: 5vw;
   color: $boho-dark;
 }
+@mixin containerWhiteHeadingTablet {
+  font-size: 3vw;
+  color: $boho-dark;
+}
 @mixin containerWhiteParagraph {
   font-size: 1.25vw;
   color: $boho-dark;
 }
 @mixin containerWhiteParagraphMobile {
   font-size: 3.5vw;
+  color: $boho-dark;
+}
+@mixin containerWhiteParagraphTablet {
+  font-size: 1.75vw;
   color: $boho-dark;
 }
 @mixin center {
@@ -65,4 +74,10 @@ $mobile: 426px;
   margin-block-end: 0;
   padding: 7.5% 0 0 0;
   font-size: 10vw;
+}
+@mixin tabletH2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding: 7.5% 0 0 0;
+  font-size: 6.5vw;
 }

@@ -15,6 +15,9 @@
     font-size: 2vh;
     font-weight: bold;
     transition: color ease-in-out 0.25s;
+    @media (max-width: $mobile) {
+      font-size: 4vh;
+    }
   }
 }
 
@@ -32,6 +35,10 @@
   transform: translateY(-50px);
   animation: appearDown 0.75s 3s forwards;
   @media (max-width: $mobile) {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 100%;

@@ -5,6 +5,10 @@
   @media (max-width: $mobile) {
     @include containerWhiteMobile;
   }
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    border-radius: 0;
+    height: 100vh;
+  }
   &__container {
     height: 100%;
     min-width: 50%;
@@ -29,6 +33,9 @@
     @media (max-width: $mobile) {
       @include mobileH2;
     }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      @include tabletH2;
+    }
   }
   &__paragraph {
     font-size: 2vw;
@@ -37,6 +44,10 @@
     animation: none;
     @media (max-width: $mobile) {
       @include containerWhiteParagraphMobile;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      font-size: 2.5vw;
+      color: $boho-dark;
     }
   }
   &__carousel {
@@ -55,6 +66,9 @@
     height: 100%;
     object-fit: contain;
     @media (max-width: $mobile) {
+      object-fit: cover;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
       object-fit: cover;
     }
   }

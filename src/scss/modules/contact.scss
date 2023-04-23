@@ -11,6 +11,10 @@
     justify-content: center;
     align-items: center;
   }
+  @media (min-width: $tablet) and (max-width: $laptop) {
+    border-radius: 0;
+    height: 100vh;
+  }
   &__container {
     width: 50%;
     @media (max-width: $mobile) {
@@ -44,6 +48,9 @@
     @media (max-width: $mobile) {
       max-width: 17.5vw;
     }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      max-width: 12.5vw;
+    }
   }
   &__image {
     max-width: 100%;
@@ -55,6 +62,9 @@
     font-weight: bold;
     @media (max-width: $mobile) {
       font-size: 3.75vw;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      font-size: 2.25vw;
     }
     &--1 {
       opacity: 0;
@@ -82,6 +92,9 @@
     text-align: center;
     @media (max-width: $mobile) {
       font-size: 6vw;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      font-size: 3vw;
     }
   }
 }
@@ -126,6 +139,9 @@
     cursor: pointer;
     @media (max-width: $mobile) {
       font-size: 4vw;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      font-size: 2.25vw;
     }
   }
 }
