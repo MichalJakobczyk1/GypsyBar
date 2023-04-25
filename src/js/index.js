@@ -109,8 +109,6 @@ const buttonEng = document.querySelector(".lang__button--eng");
 const navAbout = document.querySelector(".navigation__link--about");
 const navGallery = document.querySelector(".navigation__link--gallery");
 const navContact = document.querySelector(".navigation__link--contact");
-const welcomeH1 = document.querySelector(".welcome__h1--js");
-const welcomePar = document.querySelector(".welcome__paragraph--js");
 const aboutPar = document.querySelector(".about__paragraph--js");
 const galleryH2 = document.querySelector(".gallery__h2--js");
 const galleryPar = document.querySelector(".gallery__paragraph--js");
@@ -130,8 +128,6 @@ buttonLang.addEventListener("click", () => {
     navAbout.innerHTML = "O mnie";
     navGallery.innerHTML = "Galeria";
     navContact.innerHTML = "Kontakt";
-    welcomeH1.innerHTML = "Najlepsze doświadczenia";
-    welcomePar.innerHTML = "Poczuj atmosferę baru na swoim przyjęciu";
     aboutPar.innerHTML =
       "Aliquam rutrum ultricies eros ut porttitor. Aliquam erat volutpat. Cras ac metus tincidunt, iaculis ipsum in, sodales nibh. Fusce eu sem ut eros scelerisque bibendum. Cras commodo magna a dui rutrum pulvinar. Duis condimentum et mauris nec posuere. Vestibulum porta metus vel magna aliquet, non tristique elit ultricies.";
     galleryH2.innerHTML = "Galeria";
@@ -151,8 +147,6 @@ buttonLang.addEventListener("click", () => {
     navAbout.innerHTML = "About";
     navGallery.innerHTML = "Gallery";
     navContact.innerHTML = "Contact";
-    welcomeH1.innerHTML = "Best cocktail experience";
-    welcomePar.innerHTML = "Feel cocktail bar experience on your party";
     aboutPar.innerHTML =
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent volutpat, metus vitae consectetur tempor, dui nulla viverra turpis, et fringilla ex felis quis erat. Suspendisse feugiat lacinia nibh. Aenean et tortor dapibus, varius tortor non, semper sapien. Nullam eu risus quis nibh pellentesque porta. Donec sodales ipsum nisi, eu rhoncus libero egestas vel.";
     galleryH2.innerHTML = "Gallery";

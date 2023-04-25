@@ -41,8 +41,9 @@ $mobile: 426px;
   width: 100%;
   margin: 5% 0;
   background-color: $boho-navy;
+  color: $boho-gold;
 }
-@mixin containerWhiteMobile {
+@mixin containerNavyMobile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,29 +51,23 @@ $mobile: 426px;
   width: 100%;
   margin: 0;
 }
-@mixin containerWhiteHeading {
+@mixin containerNavyHeading {
   font-size: 2vw;
-  color: $boho-dark;
 }
-@mixin containerWhiteHeadingMobile {
+@mixin containerNavyHeadingMobile {
   font-size: 5vw;
-  color: $boho-dark;
 }
-@mixin containerWhiteHeadingTablet {
+@mixin containerNavyHeadingTablet {
   font-size: 3vw;
-  color: $boho-dark;
 }
-@mixin containerWhiteParagraph {
+@mixin containerNavyParagraph {
   font-size: 1.25vw;
-  color: $boho-dark;
 }
-@mixin containerWhiteParagraphMobile {
+@mixin containerNavyParagraphMobile {
   font-size: 3.5vw;
-  color: $boho-dark;
 }
-@mixin containerWhiteParagraphTablet {
+@mixin containerNavyParagraphTablet {
   font-size: 1.75vw;
-  color: $boho-dark;
 }
 @mixin center {
   display: flex;
