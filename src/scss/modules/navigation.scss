@@ -12,11 +12,16 @@
     -webkit-appearance: none;
     cursor: pointer;
     color: $boho-stone;
-    font-size: 2vh;
     font-weight: bold;
     transition: color ease-in-out 0.25s;
+    &--hidden {
+      display: none;
+    }
+  }
+  &__image {
+    width: 4vh;
     @media (max-width: $mobile) {
-      font-size: 4vh;
+      width: 6vh;
     }
   }
 }

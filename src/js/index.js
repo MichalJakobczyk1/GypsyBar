@@ -103,7 +103,9 @@ buttons.forEach((button) => {
   });
 });
 
-const buttonLang = document.querySelector(".lang__button");
+const buttonLang = document.querySelector(".lang");
+const buttonPl = document.querySelector(".lang__button--pl");
+const buttonEng = document.querySelector(".lang__button--eng");
 const navAbout = document.querySelector(".navigation__link--about");
 const navGallery = document.querySelector(".navigation__link--gallery");
 const navContact = document.querySelector(".navigation__link--contact");
@@ -123,7 +125,8 @@ let isPl = false;
 
 buttonLang.addEventListener("click", () => {
   if (isPl == false) {
-    buttonLang.innerHTML = "ENG";
+    buttonPl.classList.add("lang__button--hidden");
+    buttonEng.classList.remove("lang__button--hidden");
     navAbout.innerHTML = "O mnie";
     navGallery.innerHTML = "Galeria";
     navContact.innerHTML = "Kontakt";
@@ -143,7 +146,8 @@ buttonLang.addEventListener("click", () => {
     messagePlaceholder.placeholder = "Wiadomość";
     isPl = true;
   } else {
-    buttonLang.innerHTML = "PL";
+    buttonEng.classList.add("lang__button--hidden");
+    buttonPl.classList.remove("lang__button--hidden");
     navAbout.innerHTML = "About";
     navGallery.innerHTML = "Gallery";
     navContact.innerHTML = "Contact";
@@ -175,20 +179,32 @@ if (mediaQueryMobile.matches) {
     };
   });
 }
-console.log(document.querySelector(".gallery__popupImg").src);
-document.querySelector(".gallery__close").onclick = () => {
+
+const galleryCloseButton = document.querySelector(".gallery__close");
+
+function galleryClose() {
   document.querySelector(".gallery__popup").style.display = "none";
+}
+
+galleryCloseButton.onclick = () => {
+  galleryClose();
+};
+document.onkeydown = function (evt) {
+  evt = evt || window.event;
+  if (evt.keyCode == 27) {
+    galleryClose();
+  }
 };
 
-const arrowLeft = document.querySelector(".gallery__arrow--left");
-const arrowRight = document.querySelector(".gallery__arrow--right");
-if (window.innerWidth < 500) {
-  arrowLeft.src = "src/assets/img/arrowLeftWhite.svg";
-  arrowRight.src = "src/assets/img/arrowRightWhite.svg";
-} else {
-  arrowLeft.src = "src/assets/img/arrowLeft.svg";
-  arrowRight.src = "src/assets/img/arrowRight.svg";
-}
+// const arrowLeft = document.querySelector(".gallery__arrow--left");
+// const arrowRight = document.querySelector(".gallery__arrow--right");
+// if (window.innerWidth < 500) {
+//   arrowLeft.src = "img/arrowLeftWhite.svg";
+//   arrowRight.src = "img/arrowRightWhite.svg";
+// } else {
+//   arrowLeft.src = "img/arrowLeft.svg";
+//   arrowRight.src = "img/arrowRight.svg";
+// }
 
 const hamburger = document.querySelector(".menu--closed");
 const navigation = document.querySelector(".navigation--js");
