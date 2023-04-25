@@ -1,5 +1,5 @@
 .welcome {
-  @include containerWhite;
+  @include containerNavy;
   @media (max-width: $mobile) {
     @include containerWhiteMobile;
   }
@@ -58,13 +58,12 @@
       opacity: 0;
       transform: translateY(50px);
       animation: appearDown 1s 4s forwards;
-      max-width: 457px;
-      max-height: 370px;
+      max-height: 75vh;
       @media (max-width: $mobile) {
-        max-width: 310px;
+        //max-width: 310px;
       }
       @media (min-width: $tablet) and (max-width: $laptop) {
-        max-width: 357px;
+        //max-width: 357px;
       }
     }
     &--special {
