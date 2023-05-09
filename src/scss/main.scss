@@ -35,6 +35,9 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  @media (max-width: $mobile) {
+    background-position: fixed;
+  }
   &--preload {
     overflow: hidden;
     &::before {

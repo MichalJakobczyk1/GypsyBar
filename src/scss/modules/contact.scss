@@ -46,10 +46,10 @@
       transform: scale(1.15) rotate(5deg);
     }
     @media (max-width: $mobile) {
-      max-width: 17.5vw;
+      max-width: 17.5%;
     }
     @media (min-width: $tablet) and (max-width: $laptop) {
-      max-width: 12.5vw;
+      max-width: 22.5%;
     }
   }
   &__image {
@@ -61,10 +61,10 @@
     font-size: 1.25vw;
     font-weight: bold;
     @media (max-width: $mobile) {
-      font-size: 3.75vw;
+      font-size: 1em;
     }
     @media (min-width: $tablet) and (max-width: $laptop) {
-      font-size: 2.25vw;
+      font-size: 1em;
     }
     &--1 {
       opacity: 0;
