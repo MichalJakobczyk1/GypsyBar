@@ -29,15 +29,26 @@ ul {
   color: $boho-stone;
 }
 
+.background__wrap {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  & img {
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+  }
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+
 .main {
   background-image: url("../assets/img/bar-6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  @media (max-width: $mobile) {
-    background-position: fixed;
-  }
   &--preload {
     overflow: hidden;
     &::before {
