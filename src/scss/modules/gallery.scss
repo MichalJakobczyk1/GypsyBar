@@ -97,6 +97,11 @@
       right: 1rem;
     }
   }
+  &__arrow {
+    &--right {
+      transform: rotate(180deg);
+    }
+  }
   &__popup {
     display: none;
     position: fixed;
