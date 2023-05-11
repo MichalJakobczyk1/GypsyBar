@@ -49,6 +49,10 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  @media (max-width: $mobile) {
+    background-image: none;
+    background-color: $boho-sand;
+  }
   &--preload {
     overflow: hidden;
     &::before {
