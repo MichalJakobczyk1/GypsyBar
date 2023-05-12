@@ -7,7 +7,7 @@
   grid-template-rows: 25% 1fr;
   grid-template-columns: 35% 1fr;
   @media (max-width: $mobile) {
-    background-color: rgba(232, 216, 197, 0.9);
+    background-color: $boho-sand-transparent;
     border-radius: 0;
     height: 100vh;
     display: flex;
@@ -23,16 +23,16 @@
     background-size: cover;
     background-position: center;
     border-radius: 15px;
-    border: $boho-khaki 3px solid;
+    border: $boho-text 3px solid;
     @media (max-width: $mobile) {
       min-height: 35%;
       border-radius: 0;
-      border: $boho-khaki 2px solid;
+      border: $boho-text 2px solid;
     }
     @media (min-width: $tablet) and (max-width: $laptop) {
       min-height: 35%;
       border-radius: 0;
-      border: $boho-khaki 2px solid;
+      border: $boho-text 2px solid;
     }
   }
   &__h2 {

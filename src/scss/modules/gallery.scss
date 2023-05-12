@@ -1,9 +1,8 @@
 .gallery {
-  @include containerNavy;
-  color: $boho-gold;
+  @include containerCream;
   max-height: 100vh;
   @media (max-width: $mobile) {
-    @include containerNavyMobile;
+    @include containerCreamMobile;
   }
   @media (min-width: $tablet) and (max-width: $laptop) {
     border-radius: 0;
@@ -43,7 +42,7 @@
     transform: translateY(100px);
     animation: none;
     @media (max-width: $mobile) {
-      @include containerNavyParagraphMobile;
+      @include containerCreamParagraphMobile;
     }
     @media (min-width: $tablet) and (max-width: $laptop) {
       font-size: 2.5vw;

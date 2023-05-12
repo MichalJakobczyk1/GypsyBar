@@ -26,7 +26,7 @@ ul {
 .body {
   height: 100vh;
   font-family: "Cutive Mono", monospace;
-  color: $boho-stone;
+  color: $boho-text;
 }
 
 .background__wrap {
@@ -61,7 +61,7 @@ ul {
       justify-content: center;
       align-items: center;
       font-size: 5vw;
-      color: $boho-stone;
+      color: $boho-text;
       z-index: 5;
       position: fixed;
       left: 0;

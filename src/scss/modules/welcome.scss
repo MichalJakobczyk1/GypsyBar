@@ -1,35 +1,35 @@
 .welcome {
-  @include containerNavy;
+  @include containerCream;
   @media (max-width: $mobile) {
-    @include containerNavyMobile;
+    @include containerCreamMobile;
   }
   @media (min-width: $tablet) and (max-width: $laptop) {
     height: 100vh;
   }
-  // &__h1 {
-  //   @include containerWhiteHeading;
-  //   opacity: 0;
-  //   transform: translateY(50px);
-  //   animation: appearDown 1s 4.25s forwards;
-  //   @media (max-width: $mobile) {
-  //     @include containerWhiteHeadingMobile;
-  //   }
-  //   @media (min-width: $tablet) and (max-width: $laptop) {
-  //     @include containerWhiteHeadingTablet;
-  //   }
-  // }
-  // &__paragraph {
-  //   @include containerWhiteParagraph;
-  //   opacity: 0;
-  //   transform: translateY(50px);
-  //   animation: appearDown 1s 4.5s forwards;
-  //   @media (max-width: $mobile) {
-  //     @include containerWhiteParagraphMobile;
-  //   }
-  //   @media (min-width: $tablet) and (max-width: $laptop) {
-  //     @include containerWhiteParagraphTablet;
-  //   }
-  // }
+  &__h1 {
+    @include containerCreamHeading;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: appearDown 1s 4.25s forwards;
+    @media (max-width: $mobile) {
+      @include containerCreamHeadingMobile;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      @include containerCreamHeadingTablet;
+    }
+  }
+  &__paragraph {
+    @include containerCreamParagraph;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: appearDown 1s 4.5s forwards;
+    @media (max-width: $mobile) {
+      @include containerCreamParagraphMobile;
+    }
+    @media (min-width: $tablet) and (max-width: $laptop) {
+      @include containerCreamParagraphTablet;
+    }
+  }
   &__container {
     min-height: 100%;
     min-width: 50%;

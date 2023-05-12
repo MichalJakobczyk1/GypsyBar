@@ -1,12 +1,12 @@
-$boho-sand: #e8d8c5;
+$boho-sand: #fcede0;
+$boho-sand-transparent: rgba(252, 237, 224, 0.9);
 $boho-olive: #616d53;
 $boho-khaki: #967d5c;
 $boho-stone: #645b53;
 $boho-mustard: #dba955;
 $boho-clay: #b8613c;
 $boho-dark: #1b1b1b;
-$boho-navy: #1c3446;
-$boho-gold: #c67c3c;
+$boho-text: #3e3f31;
 $laptop: 1023px;
 $tablet: 767px;
 $mobile: 426px;
@@ -20,7 +20,7 @@ $mobile: 426px;
   border-radius: 5px;
 }
 @mixin containerBoho {
-  background-color: rgba(232, 216, 197, 0.9);
+  background-color: $boho-sand-transparent;
   border-radius: 15px;
   height: 75vh;
 }
@@ -33,17 +33,17 @@ $mobile: 426px;
   margin: 5% 0;
   background-color: #fff;
 }
-@mixin containerNavy {
+@mixin containerCream {
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 75vh;
   width: 100%;
   margin: 5% 0;
-  background-color: $boho-navy;
-  color: $boho-gold;
+  background-color: $boho-sand;
+  color: $boho-dark;
 }
-@mixin containerNavyMobile {
+@mixin containerCreamMobile {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,22 +51,22 @@ $mobile: 426px;
   width: 100%;
   margin: 0;
 }
-@mixin containerNavyHeading {
+@mixin containerCreamHeading {
   font-size: 2vw;
 }
-@mixin containerNavyHeadingMobile {
+@mixin containerCreamHeadingMobile {
   font-size: 5vw;
 }
-@mixin containerNavyHeadingTablet {
+@mixin containerCreamHeadingTablet {
   font-size: 3vw;
 }
-@mixin containerNavyParagraph {
+@mixin containerCreamParagraph {
   font-size: 1.25vw;
 }
-@mixin containerNavyParagraphMobile {
+@mixin containerCreamParagraphMobile {
   font-size: 3.5vw;
 }
-@mixin containerNavyParagraphTablet {
+@mixin containerCreamParagraphTablet {
   font-size: 1.75vw;
 }
 @mixin center {
