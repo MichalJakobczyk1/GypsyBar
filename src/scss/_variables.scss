@@ -7,6 +7,7 @@ $boho-mustard: #dba955;
 $boho-clay: #b8613c;
 $boho-dark: #1b1b1b;
 $boho-text: #3e3f31;
+$desktop: 1439px;
 $laptop: 1023px;
 $tablet: 767px;
 $mobile: 426px;
@@ -55,19 +56,19 @@ $mobile: 426px;
   font-size: 2vw;
 }
 @mixin containerCreamHeadingMobile {
-  font-size: 5vw;
+  font-size: 4vw;
 }
 @mixin containerCreamHeadingTablet {
-  font-size: 3vw;
+  font-size: 2.3vw;
 }
 @mixin containerCreamParagraph {
   font-size: 1.25vw;
 }
 @mixin containerCreamParagraphMobile {
-  font-size: 3.5vw;
+  font-size: 3.3vw;
 }
 @mixin containerCreamParagraphTablet {
-  font-size: 1.75vw;
+  font-size: 1.5vw;
 }
 @mixin center {
   display: flex;

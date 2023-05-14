@@ -1,6 +1,6 @@
 .welcome {
   @include containerCream;
-  @media (max-width: $mobile) {
+  @media (max-width: $tablet) {
     @include containerCreamMobile;
   }
   @media (min-width: $tablet) and (max-width: $laptop) {
@@ -11,7 +11,7 @@
     opacity: 0;
     transform: translateY(50px);
     animation: appearDown 1s 4.25s forwards;
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       @include containerCreamHeadingMobile;
     }
     @media (min-width: $tablet) and (max-width: $laptop) {
@@ -23,7 +23,7 @@
     opacity: 0;
     transform: translateY(50px);
     animation: appearDown 1s 4.5s forwards;
-    @media (max-width: $mobile) {
+    @media (max-width: $tablet) {
       @include containerCreamParagraphMobile;
     }
     @media (min-width: $tablet) and (max-width: $laptop) {
@@ -45,7 +45,7 @@
       grid-template-columns: 60% 1fr;
       grid-template-rows: 60% 1fr;
       grid-gap: 2%;
-      @media (max-width: $mobile) {
+      @media (max-width: $tablet) {
         display: none;
       }
     }
