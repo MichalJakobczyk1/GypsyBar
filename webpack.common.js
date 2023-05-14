@@ -67,9 +67,7 @@ module.exports = {
         {
           from: "public",
           globOptions: {
-            ignore: [
-              '**/*.DS_Store'
-            ],
+            ignore: ["**/*.DS_Store"],
           },
         },
       ],
@@ -81,6 +79,7 @@ module.exports = {
       inject: true,
       chunks: ["index"],
       filename: "index.html",
+      favicon: "./public/favicon.ico",
     }),
     new HtmlWebpackPlugin({
       template: "./src/pages/another.html",
@@ -88,5 +87,8 @@ module.exports = {
       chunks: ["index", "another"],
       filename: "another.html",
     }),
+    // new HtmlWebpackPlugin({
+    //   favicon: "./public/favicon.ico",
+    // }),
   ],
 };
