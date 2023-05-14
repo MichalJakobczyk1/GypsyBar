@@ -4,6 +4,33 @@ import "../scss/main.scss";
 // registerSW();
 
 /* place your code below */
+function hasTouch() {
+  return (
+    "ontouchstart" in document.documentElement ||
+    navigator.maxTouchPoints > 0 ||
+    navigator.msMaxTouchPoints > 0
+  );
+}
+
+if (hasTouch()) {
+  // remove all the :hover stylesheets
+  try {
+    // prevent exception on browsers not supporting DOM styleSheets properly
+    for (var si in document.styleSheets) {
+      var styleSheet = document.styleSheets[si];
+      if (!styleSheet.rules) continue;
+
+      for (var ri = styleSheet.rules.length - 1; ri >= 0; ri--) {
+        if (!styleSheet.rules[ri].selectorText) continue;
+
+        if (styleSheet.rules[ri].selectorText.match(":hover")) {
+          styleSheet.deleteRule(ri);
+        }
+      }
+    }
+  } catch (ex) {}
+}
+
 const mediaQueryMobile = window.matchMedia("(min-width: 426px)");
 
 const aboutSection = document.querySelectorAll(".section--about");
@@ -195,16 +222,6 @@ document.onkeydown = function (evt) {
     galleryClose();
   }
 };
-
-// const arrowLeft = document.querySelector(".gallery__arrow--left");
-// const arrowRight = document.querySelector(".gallery__arrow--right");
-// if (window.innerWidth < 500) {
-//   arrowLeft.src = "img/arrowLeftWhite.svg";
-//   arrowRight.src = "img/arrowRightWhite.svg";
-// } else {
-//   arrowLeft.src = "img/arrowLeft.svg";
-//   arrowRight.src = "img/arrowRight.svg";
-// }
 
 const hamburger = document.querySelector(".menu--closed");
 const navigation = document.querySelector(".navigation--js");
