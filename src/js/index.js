@@ -148,12 +148,12 @@ const emailPlaceholder = document.getElementsByName("Email")[0];
 const phonePlaceholder = document.getElementsByName("PhoneNumber")[0];
 const messagePlaceholder = document.getElementsByName("Message")[0];
 
-let isPl = false;
+let isPl = true;
 
 buttonLang.addEventListener("click", () => {
   if (isPl == false) {
-    buttonPl.classList.add("lang__button--hidden");
     buttonEng.classList.remove("lang__button--hidden");
+    buttonPl.classList.add("lang__button--hidden");
     navAbout.innerHTML = "O mnie";
     navGallery.innerHTML = "Galeria";
     navContact.innerHTML = "Kontakt";
