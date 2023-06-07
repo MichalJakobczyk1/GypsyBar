@@ -1,18 +1,12 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://michaljakobczyk1.github.io/cvGypsyBar/bar.jpg)
 
-# WTF Webpack Starter Kit 
+# Gypsy Mobile Bar
 
-Simple toolkit for your static websites development.
+This website has been designed and developed for my acquaintance, showcasing the offerings of his mobile bar.
 
-## How to use it?
+## Made with
 
-Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
-
-## Available scripts
-
-`npm run start` - runs development mode
-
-`npm run build` - runs build process for production
-
-`npm run publish` - runs build process and publish the page using `gh-pages` branch
-
+- Netlify
+- HTML5
+- SCSS
+- JavaScript
