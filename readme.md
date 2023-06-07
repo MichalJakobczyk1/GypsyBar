@@ -1,4 +1,4 @@
-![cover](https://michaljakobczyk1.github.io/cvGypsyBar/bar.jpg)
+![cover](https://michaljakobczyk1.github.io/GypsyBar/bar.jpg)
 
 # Gypsy Mobile Bar
 
