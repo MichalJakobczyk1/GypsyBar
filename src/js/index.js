@@ -141,12 +141,12 @@ const welcomePar = document.querySelector(".welcome__paragraph--js");
 const aboutPar = document.querySelector(".about__paragraph--js");
 const galleryH2 = document.querySelector(".gallery__h2--js");
 const galleryPar = document.querySelector(".gallery__paragraph--js");
-const contactH3 = document.querySelector(".contact__h3--js");
-const submit = document.querySelector(".form__submit--js");
-const namePlaceholder = document.getElementsByName("Name")[0];
-const emailPlaceholder = document.getElementsByName("Email")[0];
-const phonePlaceholder = document.getElementsByName("PhoneNumber")[0];
-const messagePlaceholder = document.getElementsByName("Message")[0];
+// const contactH3 = document.querySelector(".contact__h3--js");
+// const submit = document.querySelector(".form__submit--js");
+// const namePlaceholder = document.getElementsByName("Name")[0];
+// const emailPlaceholder = document.getElementsByName("Email")[0];
+// const phonePlaceholder = document.getElementsByName("PhoneNumber")[0];
+// const messagePlaceholder = document.getElementsByName("Message")[0];
 
 let isPl = true;
 
@@ -165,12 +165,12 @@ buttonLang.addEventListener("click", () => {
     galleryPar.innerHTML = "Sprawdź moje poprzednie realizacje";
     contactParagraphOne.innerHTML = "Sprawdź nowe posty";
     contactParagraphTwo.innerHTML = "Oraz zdjęcia i relacje";
-    contactH3.innerHTML = "Lub skontaktuj się </br> ze mną od razu";
-    submit.innerHTML = "Wyślij";
-    namePlaceholder.placeholder = "Imię";
-    emailPlaceholder.placeholder = "Email";
-    phonePlaceholder.placeholder = "Numer telefonu";
-    messagePlaceholder.placeholder = "Wiadomość";
+    // contactH3.innerHTML = "Lub skontaktuj się </br> ze mną od razu";
+    // submit.innerHTML = "Wyślij";
+    // namePlaceholder.placeholder = "Imię";
+    // emailPlaceholder.placeholder = "Email";
+    // phonePlaceholder.placeholder = "Numer telefonu";
+    // messagePlaceholder.placeholder = "Wiadomość";
     isPl = true;
   } else {
     buttonEng.classList.add("lang__button--hidden");
@@ -186,12 +186,12 @@ buttonLang.addEventListener("click", () => {
     galleryPar.innerHTML = "Check my previous realizations";
     contactParagraphOne.innerHTML = "Check facebook for new posts";
     contactParagraphTwo.innerHTML = "Instagram for photos&relations";
-    contactH3.innerHTML = "You can also write here </br> straight ahead";
-    submit.innerHTML = "Send";
-    namePlaceholder.placeholder = "Your name";
-    emailPlaceholder.placeholder = "Your email";
-    phonePlaceholder.placeholder = "Your contact number";
-    messagePlaceholder.placeholder = "Your message";
+    // contactH3.innerHTML = "You can also write here </br> straight ahead";
+    // submit.innerHTML = "Send";
+    // namePlaceholder.placeholder = "Your name";
+    // emailPlaceholder.placeholder = "Your email";
+    // phonePlaceholder.placeholder = "Your contact number";
+    // messagePlaceholder.placeholder = "Your message";
     isPl = false;
   }
 });
